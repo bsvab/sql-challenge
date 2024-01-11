@@ -12,7 +12,7 @@ Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tab
 <br>
 
 <ins>Entity Relationship Diagram</ins>:<img src="images/uta_icon_checkmark.svg" width="30" height="12">  <br>
-![Diagram](images/01EntityRelationshipDiagram.png)
+![Diagram](images/EntityRelationshipDiagram.png)
 <br>
 
 ## <p style="color:#CC6600">Data Engineering</p> 

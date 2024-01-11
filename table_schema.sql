@@ -10,13 +10,13 @@ CREATE TABLE "titles" (
 
 CREATE TABLE "employees" (
     "emp_no" INT NOT NULL PRIMARY KEY,
-    "emp_title_id" VARCHAR(5),
-    FOREIGN KEY ("emp_title_id") REFERENCES title(title_id),
-    "birth_date" DATE,
-    "first_name" VARCHAR(50),
-    "last_name" VARCHAR(50),
-    "sex" VARCHAR(1),
-    "hire_date" DATE
+    "emp_title_id" VARCHAR(5) NOT NULL,
+    FOREIGN KEY ("emp_title_id") REFERENCES titles(title_id),
+    "birth_date" DATE NOT NULL,
+    "first_name" VARCHAR(50) NOT NULL,
+    "last_name" VARCHAR(50) NOT NULL,
+    "sex" VARCHAR(1) NOT NULL,
+    "hire_date" DATE NOT NULL
 );
 
 CREATE TABLE "dept_emp" (
@@ -38,3 +38,6 @@ CREATE TABLE "salaries" (
     FOREIGN KEY ("emp_no") REFERENCES employees(emp_no),
     "salary" INT NOT NULL
 );
+
+-- I did not elect to create a composite key for the dept_emp and dept_manager tables as I didn't see a need to as they 
+-- are both made up of only foreign keys and I didn't see a need to be able to reference them directly outside of that
