@@ -25,11 +25,7 @@ Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tab
 
    - Be sure to create the tables in the correct order to handle the foreign keys.
 
-2. Import each CSV file into its corresponding SQL table.<br>
-<br>
-
-<ins>Entity Relationship Diagram</ins>:<img src="images/uta_icon_checkmark.svg" width="30" height="12">  <br>
-![Image](images/01EntityRelationshipDiagram.png)
+2. Import each CSV file into its corresponding SQL table.
 <br>
 
 ## <p style="color:#CC6600">Data Analysis</p> 
