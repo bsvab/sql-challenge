@@ -20,6 +20,7 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "dept_emp" (
+    "dept_emp_table_id" SERIAL PRIMARY KEY,
     "emp_no" INT NOT NULL,
     FOREIGN KEY ("emp_no") REFERENCES employees(emp_no),
     "dept_no" VARCHAR(4) NOT NULL,
@@ -27,6 +28,7 @@ CREATE TABLE "dept_emp" (
 );
 
 CREATE TABLE "dept_manager" (
+    "dept_manager_table_id" SERIAL PRIMARY KEY,
     "dept_no" VARCHAR(4) NOT NULL,
     FOREIGN KEY ("dept_no") REFERENCES departments(dept_no),
     "emp_no" INT NOT NULL,
@@ -34,6 +36,7 @@ CREATE TABLE "dept_manager" (
 );
 
 CREATE TABLE "salaries" (
+    "salaries_table_id" SERIAL PRIMARY KEY,
     "emp_no" INT NOT NULL,
     FOREIGN KEY ("emp_no") REFERENCES employees(emp_no),
     "salary" INT NOT NULL
